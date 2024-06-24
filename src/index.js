@@ -1,10 +1,11 @@
 /** GENERAL FEEDBACK:
- *
+ * Overall, great job getting most test cases to pass!
  */
 
 const handleSubmit = (event) => {
     event.preventDefault()
     const formData = new FormData(event.target);
+    /** FEEDBACK: Great job destructuring! */
     const { codingLevel, location, didLikeAssignment, username } = Object.fromEntries(formData)
     document.querySelector("#results-username")
         .textContent = username
